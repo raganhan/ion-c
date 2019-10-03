@@ -1,7 +1,7 @@
 # Amazon Ion C
 A C implementation of the [Ion data notation](http://amzn.github.io/ion-docs).
 
-[![Build Status](https://travis-ci.org/amzn/ion-c.svg?branch=master)](https://travis-ci.org/amzn/ion-c)
+[![Actions Status](https://github.com/raganhan/ion-c/workflows/build/badge.svg)](https://github.com/raganhan/ion-c/actions?workflow=build)
 [![Build status](https://ci.appveyor.com/api/projects/status/x6xfom3x3hs3y945/branch/master?svg=true)](https://ci.appveyor.com/project/tgregg/ion-c-3akm7/branch/master)
 <a title="docs" href="https://amzn.github.io/ion-c"><img src="https://img.shields.io/badge/docs-api-green.svg"/></a>
 
