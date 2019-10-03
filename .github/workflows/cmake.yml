@@ -31,7 +31,7 @@ jobs:
         echo $GITHUB_REF
         
     - name: generate documentation
-      if: github.ref == 'master'
+      if: github.ref == 'refs/heads/master'
       run: doxygen ./Doxyfile
 
 
