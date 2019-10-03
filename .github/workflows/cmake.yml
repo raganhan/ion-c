@@ -28,6 +28,7 @@ jobs:
       run: |
         ./build/debug/test/all_tests
         ./build/release/test/all_tests
+        echo $GITHUB_REF
         
     - name: generate documentation
       if: github.ref == 'master'
