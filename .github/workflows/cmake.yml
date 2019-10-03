@@ -1,0 +1,28 @@
+name: build
+
+on:
+    push:
+        branches:
+        - master
+    pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+  
+    steps:
+    - name: Checkout change
+      uses: actions/checkout@v1
+
+    - name: Checkout submodules
+      uses: textbook/git-checkout-submodule-action@2.0.0
+      
+    - name: build
+      run: |
+        ./build-debug.sh
+        ./build-release.sh
+
+    - name: test
+      run: |
+        ./build/debug/test/all_tests
+        ./build/release/test/all_tests
